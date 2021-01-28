@@ -1,0 +1,25 @@
+.container {
+    padding: 24px 24px 24px 24px;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    border-radius: 7px;
+    margin-bottom: 32px;
+}
+
+h2 {
+    height: 24px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #061B50;
+}
+
+.mat-list-content {
+    display: flex;
+    flex-direction: row;
+}
