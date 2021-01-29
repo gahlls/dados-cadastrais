@@ -24,7 +24,7 @@ import { FormularioPropostaComponent } from './formulario-proposta/formulario-pr
 import { DadosBasicosComponent } from './dados-basicos/dados-basicos.component';
 import { DadosPropostasComponent } from './dados-propostas/dados-propostas.component';
 import { PerfilComponent } from './perfil/perfil.component';
-import { PropostasListComponent } from './propostas-list/propostas-list.component'; 
+import { ButtonFooterComponent } from './button-footer/button-footer.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +34,7 @@ import { PropostasListComponent } from './propostas-list/propostas-list.componen
     DadosBasicosComponent,
     DadosPropostasComponent,
     PerfilComponent,
-    PropostasListComponent
+    ButtonFooterComponent
   ],
   imports: [
     BrowserModule,

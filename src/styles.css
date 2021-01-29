@@ -1,13 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
+
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-ripple .mat-ripple-element {
-    opacity: 0.03 !important;
-    background-color: #dc6b2f!important;
+h1, h2 {
+    color: #061B50;   
 }
 
-::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-background,.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
-    background-color: #dc6b2f;
+a {
+    cursor: pointer;
 }
+
+p {
+    color: #333333;
+}
+
+button {
+    font-family: Roboto;
+    font-style:normal;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: capitalize;
+    border-radius: 4.07px;
+}
+

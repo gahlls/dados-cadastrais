@@ -1,0 +1,23 @@
+.btn-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btn-cancelar {
+    background: #ffffff;
+    border: 1px solid #dc6b2f;
+    color: #dc6b2f;
+}
+
+.btn-salvar {
+    background-color: #dc6b2f;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 978px) {
+    .btn-group {
+        margin: 0px 16px 0px 16px;
+        margin-bottom: 10px; 
+    }
+}

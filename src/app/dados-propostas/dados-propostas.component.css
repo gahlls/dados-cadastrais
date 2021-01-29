@@ -6,41 +6,9 @@
     margin-bottom: 32px;
 }
 
-h2 {
-    height: 24px;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-
-    color: #061B50;
-}
-
-.container p {
-    height: 24px;
-    font-family: Roboto;
-    font-size: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
-
-    color: #333333;
-}
-
 mat-radio-button {
     margin-right: 25px;
 }
-
-/* ::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-ripple .mat-ripple-element {
-    opacity: 0.03 !important;
-    background-color: #dc6b2f!important;
-}
-
-::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-background,.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
-    background-color: #dc6b2f;
-} */
 
 mat-card {
     display: flex;
@@ -50,7 +18,9 @@ mat-card {
     color: #ffffff;
 }
 
-a {
-    cursor: pointer;
+@media screen and (max-width: 978px) {
+    .container {
+        margin: 0px 16px 0px 16px;
+        margin-bottom: 24px; 
+    }
 }
-

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-token',
@@ -8,15 +7,9 @@ import { Router } from '@angular/router';
 })
 export class TokenComponent implements OnInit {
 
-  constructor(
-    private router: Router
-  ) { }
+  constructor() { }
 
   ngOnInit(): void {
-  }
-
-  goBack() {
-    this.router.navigate(['/perfil'])
   }
 
 }
