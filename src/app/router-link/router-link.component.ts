@@ -8,6 +8,8 @@ import { Component, OnInit, Input } from '@angular/core';
 export class RouterLinkComponent implements OnInit {
 
   @Input() title: string
+  
+  @Input() path: string
 
   constructor() { }
 
