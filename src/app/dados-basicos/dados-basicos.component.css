@@ -13,6 +13,7 @@
     justify-content: center;
     align-items: center;
     width: 620px;
+    margin-bottom: 10px
 }
 
 .mat-list-content-first > div {
@@ -32,6 +33,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    height: 50px;
 }
 
 .mat-list-content > div  {
@@ -82,7 +84,7 @@
         align-items: center;
         flex-wrap: wrap;
     }
-
+    
     .mat-list-content > div  {
         display: flex; 
         width: 100%;

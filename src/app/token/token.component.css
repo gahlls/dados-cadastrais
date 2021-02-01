@@ -25,6 +25,14 @@
     margin-right: 15px;
 }
 
+.input-contato {
+    width: 167px;
+}
+
+.input-senha {
+    width: 264px
+}
+
 @media screen and (max-width: 978px) {
     .container > div {
         width: 100%;
@@ -36,6 +44,14 @@
 
     h1 {
         margin: 16px 0px 10px 16px;
+    }
+
+    .input-contato {
+        width: 100%;
+    }
+    
+    .input-senha {
+        width: 100%;
     }
 }
 

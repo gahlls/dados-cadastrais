@@ -25,6 +25,7 @@ import { DadosBasicosComponent } from './dados-basicos/dados-basicos.component';
 import { DadosPropostasComponent } from './dados-propostas/dados-propostas.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { ButtonFooterComponent } from './button-footer/button-footer.component';
+import { RouterLinkComponent } from './router-link/router-link.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { ButtonFooterComponent } from './button-footer/button-footer.component';
     DadosBasicosComponent,
     DadosPropostasComponent,
     PerfilComponent,
-    ButtonFooterComponent
+    ButtonFooterComponent,
+    RouterLinkComponent
   ],
   imports: [
     BrowserModule,
