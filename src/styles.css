@@ -25,3 +25,10 @@ button {
     border-radius: 4.07px;
 }
 
+.pointer-cursor {
+    cursor: pointer;
+}
+
+.orange {
+    color: #DA5820;
+}

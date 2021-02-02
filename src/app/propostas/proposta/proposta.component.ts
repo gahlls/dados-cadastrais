@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Proposta } from './proposta.model'
+
 @Component({
   selector: 'app-proposta',
   templateUrl: './proposta.component.html',
@@ -7,11 +9,38 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PropostaComponent implements OnInit {
 
-  panelOpenState = false;
+  propostas: Proposta[] = [
+    {
+      codigo: "1",
+      tipo: "CVP",
+      nome: "Individual VGBL",
+      titular: "Rodrigo Glauco",
+      cep: "1010-000",
+      data: "20.01.2020",
+      opened: false
+    },
+    {
+      codigo: "2",
+      tipo: "CVP",
+      nome: "Individual VGBL",
+      titular: "Rodrigo Glauco",
+      cep: "1010-000",
+      data: "20.01.2020",
+      opened: false
+    },
+    {
+      codigo: "3",
+      tipo: "CVP",
+      nome: "Individual VGBL",
+      titular: "Rodrigo Glauco",
+      cep: "1010-000",
+      data: "20.01.2020",
+      opened: false
+    }
+  ]
 
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }

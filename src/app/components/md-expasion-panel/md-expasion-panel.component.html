@@ -1,0 +1,48 @@
+<mat-accordion class="example-headers-align" multi>
+<mat-expansion-panel (opened)="panelOpenState = true"
+                        (closed)="panelOpenState = false">
+<mat-expansion-panel-header>
+<mat-panel-title class="mat-panel-title-custom">
+    <div class="order1" style="display: flex; align-items: flex-start; flex: 1;">
+        <b style="color: #001E64;">Individual VGBL </b> 
+    </div>
+    <div class="order2">
+        <span>80000440 | RODRIGO GLAUCIO | CEP: 1010-000 INÍCIO 20.01.2020</span>
+    </div>
+    <div class="order3" style="display: flex; justify-content: center; align-items: center;">
+        <mat-icon style="color: #DA5820">add_circle</mat-icon>
+        <span style="color: #DA5820;">
+            Atualize seus dados 
+        </span>
+    </div>
+    <div class="order4" *ngIf="!panelOpenState" class="mat-panel-title-custom">
+        <span>
+            Editar
+        </span>
+    </div>
+</mat-panel-title>
+</mat-expansion-panel-header>
+<app-proposta-detail></app-proposta-detail>
+</mat-expansion-panel>
+
+
+
+<mat-expansion-panel (opened)="panelOpenState = true"
+                        (closed)="panelOpenState = false">
+<mat-expansion-panel-header>
+<mat-panel-title class="mat-panel-title-custom">
+    <div>
+        <b style="color: #001E64;">Individual VGBL </b>80000440 | RODRIGO GLAUCIO | CEP: 1010-000 INÍCIO 20.01.2020 
+    </div>
+    <div *ngIf="!panelOpenState" style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
+        <span>
+            Editar
+        </span>
+    </div>
+</mat-panel-title>
+</mat-expansion-panel-header>
+<app-proposta-detail></app-proposta-detail>
+</mat-expansion-panel>
+
+
+</mat-accordion> 

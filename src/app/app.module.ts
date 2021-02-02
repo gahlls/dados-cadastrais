@@ -25,6 +25,7 @@ import { ButtonFooterComponent } from './button-footer/button-footer.component';
 import { RouterLinkComponent } from './router-link/router-link.component';
 import { PropostaComponent } from './propostas/proposta/proposta.component';
 import { PropostaDetailComponent } from './proposta-detail/proposta-detail.component';
+import { MdExpasionPanelComponent } from './components/md-expasion-panel/md-expasion-panel.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { PropostaDetailComponent } from './proposta-detail/proposta-detail.compo
     ButtonFooterComponent,
     RouterLinkComponent,
     PropostaComponent,
-    PropostaDetailComponent
+    PropostaDetailComponent,
+    MdExpasionPanelComponent
   ],
   imports: [
     BrowserModule,

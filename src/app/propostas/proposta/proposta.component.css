@@ -1,13 +1,28 @@
-
-.mat-panel-title-custom {
-    display: flex;
-    flex-direction: row;
-    align-items: center; 
-    justify-content: center;
+.panel {
+  background-color: #ffffff;
+  width: 100%;
 }
 
-.mat-panel-title-custom span {
-    margin-right: 5px;
-} 
+.panel-header {
+  display: flex;
+  height: 50px;
+}
 
+.panel-header > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.colapse {
+  display: flex;
+  flex: 1; 
+  flex-wrap: wrap;
+  background: rgba(0, 30, 100, 0.05);
+}
+
+.align-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
