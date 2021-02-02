@@ -1,14 +1,8 @@
 <div class="panel pointer-cursor" *ngFor="let proposta of propostas">
-    <div class="panel-header" [class.panel-active]="proposta.opened" (click)="proposta.opened = !proposta.opened">
-        <div [class.panel-active-text]="proposta.opened">
-            <b>{{proposta.nome}}</b>
-        </div>
-        <div [class.panel-active-text]="proposta.opened">
-            <span>{{proposta.codigo}} | </span>
-            <span>{{proposta.titular}} | </span>
-            <span>{{proposta.cep}}</span>
-            <span>{{proposta.data}}</span>
-        </div>
+    <div class="panel-header" [class.panel-active]="proposta.opened" (click)="proposta.opened = !proposta.opened"> 
+        <b [class.panel-active-text]="proposta.opened">{{proposta.nome}}</b>
+        <span [class.panel-active-text]="proposta.opened">{{proposta.codigo}} | {{proposta.titular}} | {{proposta.cep}}</span>
+        <span [class.panel-active-text]="proposta.opened">Início {{proposta.data}}</span>
         <div class="orange">
             <mat-icon>add_circle</mat-icon>
             <span>

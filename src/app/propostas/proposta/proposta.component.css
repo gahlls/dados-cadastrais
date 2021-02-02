@@ -5,14 +5,21 @@
 
 .panel-header {
   display: flex;
+  justify-content: space-between;
   height: 50px;
+  padding: 0 28px 0 28px;
 }
 
-.panel-header > div {
+.panel-header > * {
   display: flex;
   justify-content: center;
   align-items: center; 
 }
+
+/* .panel-header div:nth-of-type(4) {
+  flex: 1;
+  justify-content: flex-end;
+} */
 
 .colapse {
   display: flex;
@@ -33,4 +40,8 @@
 .panel-active-text {
   color: #001E64;
   font-weight: bold;
+}
+
+app-proposta-detail {
+  padding: 0 28px 0 28px;
 }
