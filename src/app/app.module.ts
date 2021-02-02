@@ -18,25 +18,25 @@ import { MatListModule } from '@angular/material/list';
 import { MatSelectModule } from '@angular/material/select'; 
 import { MatFormFieldModule } from '@angular/material/form-field';
 
-import { SenhaComponent } from './senha/senha.component';
-import { TokenComponent } from './token/token.component';
-import { FormularioPropostaComponent } from './formulario-proposta/formulario-proposta.component';
 import { DadosBasicosComponent } from './dados-basicos/dados-basicos.component';
-import { DadosPropostasComponent } from './dados-propostas/dados-propostas.component';
+import { PropostasComponent } from './propostas/propostas.component'
 import { PerfilComponent } from './perfil/perfil.component';
 import { ButtonFooterComponent } from './button-footer/button-footer.component';
 import { RouterLinkComponent } from './router-link/router-link.component';
+import { PropostaComponent } from './propostas/proposta/proposta.component';
+import { PropostaDetailComponent } from './proposta-detail/proposta-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     routingComponents,
-    FormularioPropostaComponent,
     DadosBasicosComponent,
-    DadosPropostasComponent,
+    PropostasComponent,
     PerfilComponent,
     ButtonFooterComponent,
-    RouterLinkComponent
+    RouterLinkComponent,
+    PropostaComponent,
+    PropostaDetailComponent
   ],
   imports: [
     BrowserModule,

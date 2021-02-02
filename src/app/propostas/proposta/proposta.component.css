@@ -1,0 +1,13 @@
+
+.mat-panel-title-custom {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: center;
+}
+
+.mat-panel-title-custom span {
+    margin-right: 5px;
+} 
+
+
