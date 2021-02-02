@@ -1,5 +1,5 @@
 <div class="panel pointer-cursor" *ngFor="let proposta of propostas">
-    <div class="panel-header" (click)="proposta.opened = !proposta.opened">
+    <div class="panel-header" [class.panel-active]="proposta.opened" (click)="proposta.opened = !proposta.opened">
         <div>
             <b>{{proposta.nome}}</b>
         </div>
@@ -21,7 +21,7 @@
         </div>
     </div>
     <div class="colapse" *ngIf="proposta.opened">
-        <app-proposta-detail></app-proposta-detail>
+        <app-proposta-detail [class.panel-active]="proposta.opened"></app-proposta-detail>
     </div>
     <mat-divider></mat-divider>
 </div>

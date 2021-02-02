@@ -18,11 +18,14 @@
   display: flex;
   flex: 1; 
   flex-wrap: wrap;
-  background: rgba(0, 30, 100, 0.05);
 }
 
 .align-item {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.panel-active {
+  background: rgba(0, 30, 100, 0.05);
 }
