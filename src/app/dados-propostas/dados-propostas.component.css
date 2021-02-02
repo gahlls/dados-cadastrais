@@ -6,6 +6,49 @@
     margin-bottom: 32px;
 }
 
+h2 {
+    margin: 24px 0px 24px 24px;
+}
+
+.mat-card-custom {
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: center;
+}
+
+.mat-card-custom div {
+    margin-right: 16px;
+}
+
+.mat-card-custom div b {
+    margin-right: 5px;
+}
+
+.mat-card-custom div mat-checkbox:first-child {
+    margin-right: 16px;
+}
+
+.mat-card-custom span {
+    margin-right: 16px;
+}
+
+.mat-card-custom b {
+    margin-right: 5px;
+}
+
+.mat-panel-title-custom {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: center;
+}
+
+
+.mat-panel-title-custom span {
+    margin-right: 5px;
+}
+
 mat-radio-button {
     margin-right: 25px;
 }
@@ -18,9 +61,16 @@ mat-card {
     color: #ffffff;
 }
 
+.mat-panel-title-custom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 @media screen and (max-width: 978px) {
     .container {
         margin: 0px 16px 0px 16px;
         margin-bottom: 24px; 
     }
 }
+
