@@ -11,7 +11,7 @@
 .panel-header > div {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; 
 }
 
 .colapse {
@@ -28,4 +28,9 @@
 
 .panel-active {
   background: rgba(0, 30, 100, 0.05);
+}
+
+.panel-active-text {
+  color: #001E64;
+  font-weight: bold;
 }

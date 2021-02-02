@@ -11,7 +11,7 @@ export class PropostaComponent implements OnInit {
 
   propostas: Proposta[] = [
     {
-      codigo: "1",
+      codigo: "80000440",
       tipo: "CVP",
       nome: "Individual VGBL",
       titular: "Rodrigo Glauco",
@@ -20,7 +20,7 @@ export class PropostaComponent implements OnInit {
       opened: false
     },
     {
-      codigo: "2",
+      codigo: "80000440",
       tipo: "CVP",
       nome: "Individual VGBL",
       titular: "Rodrigo Glauco",
@@ -29,7 +29,7 @@ export class PropostaComponent implements OnInit {
       opened: false
     },
     {
-      codigo: "3",
+      codigo: "80000440",
       tipo: "CVP",
       nome: "Individual VGBL",
       titular: "Rodrigo Glauco",
