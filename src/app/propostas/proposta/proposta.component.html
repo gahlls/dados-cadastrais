@@ -15,7 +15,10 @@
                 Atualize seus dados 
             </span>
         </div>
-        <div>
+        <div *ngIf="proposta.opened">
+            <mat-icon>keyboard_arrow_up</mat-icon>
+        </div>
+        <div *ngIf="!proposta.opened">
             <span>Editar</span>
             <mat-icon>keyboard_arrow_down</mat-icon>
         </div>
