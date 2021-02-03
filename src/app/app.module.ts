@@ -27,6 +27,8 @@ import { PropostaComponent } from './propostas/proposta/proposta.component';
 import { PropostaDetailComponent } from './proposta-detail/proposta-detail.component';
 import { MdExpasionPanelComponent } from './components/md-expasion-panel/md-expasion-panel.component';
 
+import { PropostasService } from './propostas/propostas.service'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -57,7 +59,7 @@ import { MdExpasionPanelComponent } from './components/md-expasion-panel/md-expa
     MatSelectModule,
     MatFormFieldModule
   ],
-  providers: [],
+  providers: [PropostasService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

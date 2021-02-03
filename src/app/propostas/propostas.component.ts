@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Proposta } from './proposta/proposta.model'
+import { PropostasService } from './propostas.service'
+
 @Component({
   selector: 'app-propostas',
   templateUrl: './propostas.component.html',
@@ -7,11 +10,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PropostasComponent implements OnInit {
 
-  panelOpenState = false;
+  propostas: Proposta[]
 
-  constructor() { }
+  constructor(private propostasService: PropostasService) { }
 
   ngOnInit(): void {
+    this.propostas = this.propostasService.getAll()
   }
-
 }

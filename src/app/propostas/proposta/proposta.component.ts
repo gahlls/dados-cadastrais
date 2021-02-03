@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 import { Proposta } from './proposta.model'
 
@@ -9,38 +9,7 @@ import { Proposta } from './proposta.model'
 })
 export class PropostaComponent implements OnInit {
 
-  propostas: Proposta[] = [
-    {
-      codigo: "80000440",
-      tipo: "CVP",
-      nome: "Individual VGBL",
-      titular: "Rodrigo Glauco",
-      cep: "1010-000",
-      dataInicio: "20.01.2020",
-      dataAlteracao: "20.01.2020",
-      opened: false
-    },
-    {
-      codigo: "80000440",
-      tipo: "CVP",
-      nome: "Individual VGBL",
-      titular: "Rodrigo Glauco",
-      cep: "1010-000",
-      dataInicio: "20.01.2020",
-      dataAlteracao: "20.01.2020",
-      opened: false
-    },
-    {
-      codigo: "80000440",
-      tipo: "CVP",
-      nome: "Individual VGBL",
-      titular: "Rodrigo Glauco",
-      cep: "1010-000",
-      dataInicio: "20.01.2020",
-      dataAlteracao: "20.01.2020",
-      opened: false
-    }
-  ]
+  @Input() proposta: Proposta
 
   constructor() { }
 

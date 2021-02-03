@@ -1,4 +1,4 @@
-<div class="panel pointer-cursor" *ngFor="let proposta of propostas">
+<div class="panel pointer-cursor">
     <div class="panel-header" [class.panel-active]="proposta.opened" (click)="proposta.opened = !proposta.opened"> 
         <b class="order1" [class.panel-active-text]="proposta.opened">{{proposta.nome}}</b>
         <span class="order3" [class.panel-active-text]="proposta.opened">{{proposta.codigo}} | {{proposta.titular}} | {{proposta.cep}}</span>

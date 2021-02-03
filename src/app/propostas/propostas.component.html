@@ -3,7 +3,7 @@
     <div>
       <mat-card>
         <div>
-          <b>3 propostas</b>
+          <b>{{propostas.length}} propostas</b>
         </div>
         <div class="mat-card-custom">
           <div>
@@ -14,8 +14,8 @@
           <span>|</span> <b>Ordenar por: </b><a> Mais Antigas</a><mat-icon>keyboard_arrow_down</mat-icon>
         </div>
       </mat-card>
-      <div>
-        <app-proposta></app-proposta>
+      <div *ngFor="let proposta of propostas">
+        <app-proposta [proposta]="proposta"></app-proposta>
       </div>
     </div>
 </div>

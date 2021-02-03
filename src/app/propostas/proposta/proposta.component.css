@@ -5,6 +5,7 @@
 
 .panel-header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   height: 50px;
   padding: 0 28px 0 28px;
@@ -50,7 +51,6 @@ app-proposta-detail {
   .panel-header {
     height: 117px;
     padding: 0 16px 0 16px;
-    flex-wrap: wrap;
   }
   
   .order1 {
