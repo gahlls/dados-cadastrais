@@ -2,8 +2,14 @@
     <div class="panel-header" [class.panel-active]="proposta.opened" (click)="proposta.opened = !proposta.opened"> 
         <b [class.panel-active-text]="proposta.opened">{{proposta.nome}}</b>
         <span [class.panel-active-text]="proposta.opened">{{proposta.codigo}} | {{proposta.titular}} | {{proposta.cep}}</span>
-        <span [class.panel-active-text]="proposta.opened">Início {{proposta.data}}</span>
-        <div class="orange">
+        <span [class.panel-active-text]="proposta.opened">Início {{proposta.dataInicio}}</span>
+        <div *ngIf="proposta.opened" class="orange">
+            <mat-icon>add_circle</mat-icon>
+            <span>
+                Última alteração feita em {{proposta.dataAlteracao}}
+            </span>
+        </div>
+        <div *ngIf="!proposta.opened" class="orange">
             <mat-icon>add_circle</mat-icon>
             <span>
                 Atualize seus dados 

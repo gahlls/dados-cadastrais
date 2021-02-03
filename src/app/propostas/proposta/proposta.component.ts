@@ -16,7 +16,8 @@ export class PropostaComponent implements OnInit {
       nome: "Individual VGBL",
       titular: "Rodrigo Glauco",
       cep: "1010-000",
-      data: "20.01.2020",
+      dataInicio: "20.01.2020",
+      dataAlteracao: "20.01.2020",
       opened: false
     },
     {
@@ -25,7 +26,8 @@ export class PropostaComponent implements OnInit {
       nome: "Individual VGBL",
       titular: "Rodrigo Glauco",
       cep: "1010-000",
-      data: "20.01.2020",
+      dataInicio: "20.01.2020",
+      dataAlteracao: "20.01.2020",
       opened: false
     },
     {
@@ -34,7 +36,8 @@ export class PropostaComponent implements OnInit {
       nome: "Individual VGBL",
       titular: "Rodrigo Glauco",
       cep: "1010-000",
-      data: "20.01.2020",
+      dataInicio: "20.01.2020",
+      dataAlteracao: "20.01.2020",
       opened: false
     }
   ]

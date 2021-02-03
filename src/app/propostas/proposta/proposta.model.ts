@@ -4,6 +4,7 @@ export interface Proposta {
     nome: string,
     titular: string,
     cep: string, 
-    data: string, 
+    dataInicio: string, 
+    dataAlteracao: string,
     opened: boolean
 }
