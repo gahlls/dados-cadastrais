@@ -1,15 +1,15 @@
 <div class="panel pointer-cursor" *ngFor="let proposta of propostas">
     <div class="panel-header" [class.panel-active]="proposta.opened" (click)="proposta.opened = !proposta.opened"> 
-        <b [class.panel-active-text]="proposta.opened">{{proposta.nome}}</b>
-        <span [class.panel-active-text]="proposta.opened">{{proposta.codigo}} | {{proposta.titular}} | {{proposta.cep}}</span>
-        <span [class.panel-active-text]="proposta.opened">Início {{proposta.dataInicio}}</span>
+        <b class="order1" [class.panel-active-text]="proposta.opened">{{proposta.nome}}</b>
+        <span class="order3" [class.panel-active-text]="proposta.opened">{{proposta.codigo}} | {{proposta.titular}} | {{proposta.cep}}</span>
+        <span class="order4" [class.panel-active-text]="proposta.opened">Início {{proposta.dataInicio}}</span>
         <div *ngIf="proposta.opened" class="orange">
             <mat-icon>add_circle</mat-icon>
             <span>
                 Última alteração feita em {{proposta.dataAlteracao}}
             </span>
         </div>
-        <div *ngIf="!proposta.opened" class="orange">
+        <div *ngIf="!proposta.opened" class="order5 orange">
             <mat-icon>add_circle</mat-icon>
             <span>
                 Atualize seus dados 
@@ -18,7 +18,7 @@
         <div *ngIf="proposta.opened">
             <mat-icon>keyboard_arrow_up</mat-icon>
         </div>
-        <div *ngIf="!proposta.opened">
+        <div class="order2" *ngIf="!proposta.opened">
             <span>Editar</span>
             <mat-icon>keyboard_arrow_down</mat-icon>
         </div>
