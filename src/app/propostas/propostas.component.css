@@ -10,43 +10,23 @@ h2 {
     margin: 24px 0px 24px 24px;
 }
 
-mat-card {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #001E64;
-    color: #ffffff;
-}
-
-.mat-card-custom {
-    display: flex; 
-    flex-direction: row; 
-    align-items: center; 
-    justify-content: center;
-}
-
-.mat-card-custom div {
-    margin-right: 16px;
-}
-
-.mat-card-custom div b {
-    margin-right: 5px;
-}
-
-.mat-card-custom div mat-checkbox:first-child {
-    margin-right: 16px;
-}
-
-.mat-card-custom span {
-    margin-right: 16px;
-}
-
-.mat-card-custom b {
-    margin-right: 5px;
-}
-
 mat-radio-button {
     margin-right: 25px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    background: #001E64;
+    color: #ffffff;
+    padding: 0 24px 0 24px;
+}
+
+.card > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (max-width: 978px) {
@@ -55,4 +35,3 @@ mat-radio-button {
         margin-bottom: 24px; 
     }
 }
-
