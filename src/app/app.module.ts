@@ -27,7 +27,8 @@ import { PropostaComponent } from './propostas/proposta/proposta.component';
 import { PropostaDetailComponent } from './proposta-detail/proposta-detail.component';
 import { MdExpasionPanelComponent } from './components/md-expasion-panel/md-expasion-panel.component';
 
-import { PropostasService } from './propostas/propostas.service'
+import { PropostasService } from './propostas/propostas.service';
+import { FilterComponent } from './components/filter/filter.component'
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { PropostasService } from './propostas/propostas.service'
     RouterLinkComponent,
     PropostaComponent,
     PropostaDetailComponent,
-    MdExpasionPanelComponent
+    MdExpasionPanelComponent,
+    FilterComponent
   ],
   imports: [
     BrowserModule,

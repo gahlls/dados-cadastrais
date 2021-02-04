@@ -4,14 +4,16 @@
         <span class="order3" [class.panel-active-text]="proposta.opened">{{proposta.codigo}} | {{proposta.titular}} | {{proposta.cep}}</span>
         <span class="order4" [class.panel-active-text]="proposta.opened">Início {{proposta.dataInicio}}</span>
         <div *ngIf="proposta.opened" class="orange">
-            <mat-icon>add_circle</mat-icon>
+            <!-- <mat-icon>add_circle</mat-icon> -->
+            <img src="assets/exclamation.svg" alt="">
             <span>
                 Última alteração feita em {{proposta.dataAlteracao}}
             </span>
         </div>
         <div *ngIf="!proposta.opened" class="order5 orange">
-            <mat-icon>add_circle</mat-icon>
-            <span>
+            <!-- <mat-icon>add_circle</mat-icon> -->
+            <img src="assets/exclamation.svg" alt="">
+            <span >
                 Atualize seus dados 
             </span>
         </div>

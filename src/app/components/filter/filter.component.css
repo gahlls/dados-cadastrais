@@ -1,0 +1,9 @@
+div {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+div span {
+    font-size: 10px;
+}
