@@ -47,6 +47,10 @@ app-proposta-detail {
   padding: 0 28px 0 28px;
 }
 
+hr {
+  border: 1px solid rgba(0, 0, 0, 0.1)
+}
+
 @media screen and (max-width: 470px) {
   .panel-header {
     height: 117px;

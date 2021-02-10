@@ -4,3 +4,7 @@ div {
     justify-content: center;
     cursor: pointer;
 }
+
+div > a {
+    margin-right: 8px;
+}

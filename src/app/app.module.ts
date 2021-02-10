@@ -21,11 +21,10 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { DadosBasicosComponent } from './dados-basicos/dados-basicos.component';
 import { PropostasComponent } from './propostas/propostas.component'
 import { PerfilComponent } from './perfil/perfil.component';
-import { ButtonFooterComponent } from './button-footer/button-footer.component';
-import { RouterLinkComponent } from './router-link/router-link.component';
+import { ButtonFooterComponent } from './components/button-footer/button-footer.component';
+import { RouterLinkComponent } from './components/router-link/router-link.component';
 import { PropostaComponent } from './propostas/proposta/proposta.component';
 import { PropostaDetailComponent } from './proposta-detail/proposta-detail.component';
-import { MdExpasionPanelComponent } from './components/md-expasion-panel/md-expasion-panel.component';
 
 import { PropostasService } from './propostas/propostas.service';
 import { FilterComponent } from './components/filter/filter.component'
@@ -41,7 +40,6 @@ import { FilterComponent } from './components/filter/filter.component'
     RouterLinkComponent,
     PropostaComponent,
     PropostaDetailComponent,
-    MdExpasionPanelComponent,
     FilterComponent
   ],
   imports: [

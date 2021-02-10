@@ -1,7 +1,12 @@
-.btn-group {
+.btn-group-footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.btn-footer {
+    width: 176px;
+    height: 40px;
 }
 
 .btn-cancelar {
@@ -11,12 +16,13 @@
 }
 
 .btn-salvar {
-    background-color: #dc6b2f;
+    background: #dc6b2f;
     color: #ffffff;
+    border-radius: 4.07px;
 }
 
 @media screen and (max-width: 978px) {
-    .btn-group {
+    .btn-group-footer {
         margin: 0px 16px 0px 16px;
         margin-bottom: 10px; 
     }

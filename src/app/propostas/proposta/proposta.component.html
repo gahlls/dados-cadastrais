@@ -4,31 +4,29 @@
         <span class="order3" [class.panel-active-text]="proposta.opened">{{proposta.codigo}} | {{proposta.titular}} | {{proposta.cep}}</span>
         <span class="order4" [class.panel-active-text]="proposta.opened">Início {{proposta.dataInicio}}</span>
         <div *ngIf="proposta.opened" class="orange">
-            <!-- <mat-icon>add_circle</mat-icon> -->
             <img src="assets/exclamation.svg" alt="">
             <span>
                 Última alteração feita em {{proposta.dataAlteracao}}
             </span>
         </div>
         <div *ngIf="!proposta.opened" class="order5 orange">
-            <!-- <mat-icon>add_circle</mat-icon> -->
             <img src="assets/exclamation.svg" alt="">
             <span >
                 Atualize seus dados 
             </span>
         </div>
         <div *ngIf="proposta.opened">
-            <mat-icon>keyboard_arrow_up</mat-icon>
+            <img src="../../../assets/keyboard_arrow_up.svg" alt="">
         </div>
         <div class="order2" *ngIf="!proposta.opened">
             <span>Editar</span>
-            <mat-icon>keyboard_arrow_down</mat-icon>
+            <img src="../../../assets/keyboard_arrow_down.svg" alt="">
         </div>
     </div>
     <div class="colapse" *ngIf="proposta.opened">
         <app-proposta-detail [class.panel-active]="proposta.opened"></app-proposta-detail>
     </div>
-    <mat-divider></mat-divider>
+    <hr />
 </div>
 
 

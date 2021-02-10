@@ -1,4 +1,4 @@
-.container {
+.container-propostas {
     background: #ffffff;
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
@@ -29,9 +29,23 @@ mat-radio-button {
     align-items: center;
 }
 
+.filter-mobile {       
+    visibility: hidden;
+}
+
 @media screen and (max-width: 978px) {
-    .container {
+    .container-propostas {
         margin: 0px 16px 0px 16px;
         margin-bottom: 24px; 
+    }
+
+    .filter-desktop {
+        display: none;
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .filter-mobile {       
+        visibility: visible;
     }
 }

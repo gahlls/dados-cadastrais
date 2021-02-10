@@ -1,11 +1,11 @@
-.container {
+.container-perfil {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100vh;
 }
 
-.container > div {
+.container-perfil > div {
     width: 978px;
     height: 995px;
     padding: 32px 24px 0px 24px;
@@ -14,7 +14,7 @@
 }
 
 @media screen and (max-width: 978px) {
-    .container > div {
+    .container-perfil > div {
         width: 100%;
     }
 

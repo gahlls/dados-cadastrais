@@ -1,35 +1,31 @@
-<div class="container">
+<div class="container-propostas">
     <h2>Dados das Propostas</h2>
     <div>
-      <!-- <mat-card>
-        <div>
-          <b>{{propostas.length}} propostas</b>
-        </div>
-        <div class="mat-card-custom">
-          <div>
-            <b>Filtra por:</b>
-            <mat-checkbox>VGBL</mat-checkbox> 
-            <mat-checkbox>PGBL</mat-checkbox> 
-          </div>
-          <span>|</span> <b>Ordenar por: </b><a> Mais Antigas</a><mat-icon>keyboard_arrow_down</mat-icon>
-        </div>
-      </mat-card> -->
       <div class="card">
         <div>
           <b>{{propostas.length}} propostas</b>
         </div>
 
-        <!-- Componente de filtro para o mobile -->
-        <!-- <app-filter></app-filter>           -->
-        
+        <!-- Filtro para o mobile -->
         <div>
+          <app-filter class="filter-mobile"></app-filter>          
+        </div>
+        <!-- /Filtro para o mobile -->
+        
+        <!-- Filtro o desktop -->
+        <div class="filter-desktop">
           <div>
             <b>Filtra por:</b>
-            <mat-checkbox>VGBL</mat-checkbox> 
-            <mat-checkbox>PGBL</mat-checkbox> 
+            <input type="checkbox" checked>
+            <label>VGBL</label>
+
+            <input type="checkbox" checked>
+            <label>PGBL</label>
           </div>
           <span>|</span> <b>Ordenar por: </b><a> Mais Antigas</a><mat-icon>keyboard_arrow_down</mat-icon>
         </div>
+        <!-- /Filtro o desktop -->
+
       </div>
       <div *ngFor="let proposta of propostas">
         <app-proposta [proposta]="proposta"></app-proposta>
