@@ -1,3 +1,11 @@
+.form-group-proposta {
+    display: flex;
+}
+
+.form-group-proposta > div {
+    width: 50%;
+}
+
 .form-group-proposta > * {
     margin-right: 15px;
 }
