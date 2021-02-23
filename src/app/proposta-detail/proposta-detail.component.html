@@ -1,36 +1,36 @@
-<form action="">
+<form action=""  [formGroup]="form">
     <div class="form-group-proposta">
       <div>
         <b>Dados para Contato</b><br />
-        <div style="display: flex;">
+        <div formGroupName="dadosContato" style="display: flex;">
           <div style="margin-right: 8px;">
             <label for="">Número de contato</label>
-            <input placeholder="" class="input-contato" type="text">
+            <input formControlName="numero" class="input-contato" type="text" required>
           </div>
     
           <div>
             <label for="">Email</label>
-            <input class="input-email" type="text">
+            <input formControlName="email" class="input-email" type="text">
           </div>
         </div>
       </div>
 
       <div>
         <b>Dados Bancários</b><br />
-        <div style="display: flex;">
+        <div formGroupName="dadosBancarios" style="display: flex;">
           <div style="margin-right: 8px;">
             <label for="">Banco</label>
-            <input placeholder="" type="text">
+            <input formControlName="banco" placeholder="" type="text">
           </div>
     
           <div style="margin-right: 8px;">
             <label for="">Agência</label>
-            <input type="text">
+            <input formControlName="agencia" type="text">
           </div>
 
           <div>
             <label for="">Conta</label>
-            <input type="text">
+            <input formControlName="conta" type="text">
           </div>
         </div>
       </div>
@@ -42,12 +42,12 @@
         <div style="display: flex;">
           <div style="margin-right: 8px;">
             <label for="">CEP</label>
-            <input (change)="filterCep()" placeholder="" type="text" [formControl]="cep">
+            <input (change)="filterCep()" placeholder="" type="text" formControlName="cep">
           </div>
     
           <div>
             <label for="">Cidade</label>
-            <input type="text" [formControl]="cidade">
+            <input type="text" formControlName="cidade">
           </div>
         </div>
       </div>
@@ -56,12 +56,12 @@
         <div style="display: flex;">
           <div style="margin-right: 8px;">
             <label for="">Rua</label>
-            <input type="text" [formControl]="logradouro">
+            <input type="text" formControlName="logradouro">
           </div>
     
           <div>
             <label for="">Número</label>
-            <input type="text">
+            <input type="text" formControlName="numero">
           </div>
         </div>
       </div>
@@ -69,4 +69,8 @@
 
     <input type="checkbox">
     <label>Quero adicionar estes dados como principal para todas as minhas propostas</label>
+
+    <p>
+      Form Status: {{ form.status }}
+    </p>
   </form>
