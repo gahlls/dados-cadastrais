@@ -3,7 +3,7 @@
       <div>
         <b>Dados para Contato</b><br />
         <div style="display: flex;">
-          <div>
+          <div style="margin-right: 8px;">
             <label for="">Número de contato</label>
             <input placeholder="" class="input-contato" type="text">
           </div>
@@ -18,12 +18,12 @@
       <div>
         <b>Dados Bancários</b><br />
         <div style="display: flex;">
-          <div>
+          <div style="margin-right: 8px;">
             <label for="">Banco</label>
-            <input placeholder="asdasdasdasdas" type="text">
+            <input placeholder="" type="text">
           </div>
     
-          <div>
+          <div style="margin-right: 8px;">
             <label for="">Agência</label>
             <input type="text">
           </div>
@@ -40,23 +40,23 @@
     <div class="form-group-proposta">
       <div>
         <div style="display: flex;">
-          <div>
+          <div style="margin-right: 8px;">
             <label for="">CEP</label>
-            <input placeholder="" type="text">
+            <input (change)="filterCep()" placeholder="" type="text" [formControl]="cep">
           </div>
     
           <div>
             <label for="">Cidade</label>
-            <input type="text">
+            <input type="text" [formControl]="cidade">
           </div>
         </div>
       </div>
 
       <div>
         <div style="display: flex;">
-          <div>
+          <div style="margin-right: 8px;">
             <label for="">Rua</label>
-            <input placeholder="asdasdasdasdas" type="text">
+            <input type="text" [formControl]="logradouro">
           </div>
     
           <div>

@@ -28,6 +28,8 @@ import { PropostaDetailComponent } from './proposta-detail/proposta-detail.compo
 
 import { PropostasService } from './propostas/propostas.service';
 import { FilterComponent } from './components/filter/filter.component'
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -57,7 +59,9 @@ import { FilterComponent } from './components/filter/filter.component'
     MatDividerModule,
     MatListModule,
     MatSelectModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [PropostasService],
   bootstrap: [AppComponent]

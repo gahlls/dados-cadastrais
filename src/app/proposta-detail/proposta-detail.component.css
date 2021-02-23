@@ -2,9 +2,11 @@
     display: flex;
 }
 
-.form-group-proposta > div {
-    width: 50%;
+.form-group-proposta div {
+    width: 100%;
+    margin-bottom: 16px;
 }
+
 
 .form-group-proposta > * {
     margin-right: 15px;
@@ -25,20 +27,12 @@ input[type=text] {
     background-color: transparent;
     background-position: 10px 10px; 
     background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
-    
+    padding: 12px 20px 12px 40px; 
 }
 
 input[type=text]:focus {
     border-bottom: 2px solid #1890ff;
 }
-
-/** Placeholder transparente **/
-[placeholder]:focus::-webkit-input-placeholder {
-    transition: text-indent 0.4s 0.4s ease; 
-    text-indent: -100%;
-    opacity: 1;
- }
 
 .input-contato {
     padding: 12px 20px 12px 40px;
@@ -49,3 +43,10 @@ input[type=text]:focus {
     padding: 12px 20px 12px 40px;
     background-image: url('../../assets/Material-ic_email.svg');
 }
+
+/** Placeholder transparente **/
+[placeholder]:focus::-webkit-input-placeholder {
+    transition: text-indent 0.4s 0.4s ease; 
+    text-indent: -100%;
+    opacity: 1;
+ }
