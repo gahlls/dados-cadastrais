@@ -8,7 +8,7 @@
 
         <!-- Filtro para o mobile -->
         <div>
-          <app-filter class="filter-mobile"></app-filter>          
+          <filter class="filter-mobile"></filter>          
         </div>
         <!-- /Filtro para o mobile -->
         
@@ -28,11 +28,11 @@
 
       </div>
       <div *ngFor="let proposta of propostas">
-        <app-proposta [proposta]="proposta"></app-proposta>
+        <proposta [proposta]="proposta"></proposta>
       </div>
     </div>
 </div>
 
 <div>
-  <app-button-footer></app-button-footer>
+  <button-footer></button-footer>
 </div>

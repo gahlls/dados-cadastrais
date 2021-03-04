@@ -30,6 +30,8 @@ import { PropostasService } from './propostas/propostas.service';
 import { FilterComponent } from './components/filter/filter.component'
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ResgateComponent } from './resgate/resgate.component';
+import { SimuladorComponent } from './simulador/simulador.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +44,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     RouterLinkComponent,
     PropostaComponent,
     PropostaDetailComponent,
-    FilterComponent
+    FilterComponent,
+    ResgateComponent,
+    SimuladorComponent
   ],
   imports: [
     BrowserModule,

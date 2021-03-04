@@ -32,3 +32,8 @@ button {
 .orange {
     color: #DA5820;
 }
+
+:root {
+    --orange-sas: #DA5820;
+    --blue-sas: #001E64;
+}

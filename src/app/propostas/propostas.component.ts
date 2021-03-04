@@ -4,7 +4,7 @@ import { Proposta } from './proposta/proposta.model'
 import { PropostasService } from './propostas.service'
 
 @Component({
-  selector: 'app-propostas',
+  selector: 'propostas',
   templateUrl: './propostas.component.html',
   styleUrls: ['./propostas.component.css']
 })

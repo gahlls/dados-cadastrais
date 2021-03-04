@@ -1,0 +1,211 @@
+<div class="container-resgate">
+
+    <div>
+        <div class="card" (click)="simuladorIsOpen = !simuladorIsOpen">
+            <div *ngIf="simuladorIsOpen">
+                <img src="../../../assets/keyboard_arrow_up.svg" alt="">
+            </div>
+            <div *ngIf="!simuladorIsOpen">
+                <img src="../../../assets/keyboard_arrow_down.svg" alt="">
+            </div>
+            <strong>Simulador</strong>
+        </div>
+        <div class="content-resgate" *ngIf="simuladorIsOpen">
+            <simulador></simulador>
+        </div>
+    
+        <div class="card" (click)="resgateIsOpen = !resgateIsOpen">
+            <div *ngIf="resgateIsOpen">
+                <img src="../../../assets/keyboard_arrow_up.svg" alt="">
+            </div>
+            <div *ngIf="!resgateIsOpen">
+                <img src="../../../assets/keyboard_arrow_down.svg" alt="">
+            </div>
+            <strong>Resgate</strong>
+        </div>  
+        <div class="content-resgate" *ngIf="resgateIsOpen">
+            <form action="">
+                <div style="margin-right: 8px;">
+                    <label for="">Nome*</label>
+                    <input class="" type="text">
+                </div>
+        
+                <div>
+                    <label for="">Proposta*</label>
+                    <input class="" type="text">
+                </div>
+        
+                <div>
+                    <label for="">CPF*</label>
+                    <input class="" type="text">
+                </div>
+        
+                <div>
+                    <label for="">Plano*</label>
+                    <select name="planos">
+                        <option value="PGBL">PGBL</option>
+                        <option value="VGBL">VGBL</option>
+                        <option value="Tradicional">Tradicional</option>
+                        <option value="PRGP">PRGP</option>
+                        <option value="VRGP">VRGP</option>
+                        <option value="VGBL SAÚDE">VGBL SAÚDE</option>
+                        <option value="VGBL EDUCAÇÃO">VGBL EDUCAÇÃO</option>
+                    </select>
+                </div>
+        
+        
+                <div>
+                    <label for="">Sucursal*</label>
+                    <select name="Sucursal">
+                        <option value="1">Belém</option>
+                        <option value="2">Fortaleza</option>
+                        <option value="3">Recife</option>
+                        <option value="4">Salvador</option>
+                        <option value="5">Belém</option>
+                        <option value="6">São Paulo</option>
+                        <option value="7">Curitiba</option>
+                        <option value="8">Porto Alegre</option>
+                        <option value="9">Belo Horizonte</option>
+                        <option value="10">Brasília</option>
+                        <option value="11">Rio de Janeiro</option>
+                        <option value="12">Campinas</option>
+                        <option value="13">Cuiabá</option>
+                        <option value="14">Ribeirão Preto</option>
+                        <option value="16">Matriz Rio de Janeiro</option>
+                        <option value="17">Manaus</option>
+                        <option value="18">Distribuidores</option>
+                    </select>
+                </div>
+        
+                <div>
+                    <label for="">Segmento*</label>
+                    <select name="segemento">
+                        <option value="1">INDIVIDUAL</option>
+                        <option value="2">COLETIVO</option>
+                    </select>
+                </div>
+        
+                <div>
+                    <label for="">Matricula*</label>
+                    <input class="" type="text">
+                </div>
+        
+                <div>
+                    <label for="">Nome Fundo</label>
+                    <input class="" type="text">
+                </div>
+        
+                <div>
+                    <label for="">Recepção*</label>
+                    <select name="recepcao">
+                        <option value="1">Correio</option>
+                        <option value="2">Email</option>
+                        <option value="1">Funcionários</option>
+                        <option value="2">Malote</option>
+                        <option value="1">Pessoalmente(Cliente)</option>
+                        <option value="2">Pessoalmente(Corretor)</option>
+                        <option value="1">RS de Comunicação</option>
+                    </select>
+                </div>
+        
+                <div>
+                    <label for="">Pesquisa*</label>
+                    <select name="recepcao">
+                        <option value="272">Doença na Familia</option>
+                        <option value="271">Insatisfação com a SulAmérica</option>
+                        <option value="273">Perda de Vínculo</option>
+                        <option value="270">Problemas Financeiros</option>
+                        <option value="268">Resgate Espontâneo</option>
+                        <option value="269">Resgate por Desligamento</option>
+                    </select>  
+                </div>
+        
+                <div>
+                    <label for="">Sistema*</label>
+                    <select name="recepcao">
+                        <option value="1">AVP</option>
+                        <option value="2">ControlVP</option>
+                    </select>         
+                </div>
+        
+                <div>
+                    <label for="">Tipo Fundo*</label>
+                    <select name="recepcao">
+                        <option value="1">Fixa</option>
+                        <option value="2">Variável</option>
+                    </select>            
+                </div>
+        
+                <div>
+                    <label for="">Valor Resgate*</label>
+                    <input class="" type="text">
+                </div>
+        
+                <div>
+                    <label for="">Produto*</label>
+                    <input class="" type="text">
+                </div>
+        
+                <div>
+                    <label for="">Ev*</label>
+                    <input class="" type="text">
+                </div>
+        
+                <div>
+                    <label for="">Tipo Cliente*</label>
+                    <select name="recepcao">
+                        <option value="1">Prestige</option>
+                        <option value="2">Demais</option>
+                    </select>   
+                </div>
+        
+                <!-- <div>
+                    <label for="">Data Protocolo CNX</label>
+                    <input class="" type="text">
+                </div> -->
+        
+                <div>
+                    <label for="">Tradicional*</label>
+                    <select name="recepcao">
+                        <option value="1">Sim</option>
+                        <option value="2">Não</option>
+                    </select>   
+                </div>
+        
+        
+                <div>
+                    <label for="">Telefone*</label>
+                    <input class="" type="text">
+                </div>
+        
+                <div>
+                    <label for="">Email*</label>
+                    <input class="" type="text">
+                </div>
+        
+        
+                <!-- <div>
+                    <label for="">Data Protocolo SAS</label>
+                    <input class="" type="text">
+                </div> -->
+        
+                <div>
+                    <label for="">Projeto Tradicional*</label>
+                    <input class="" type="text">
+                </div>
+        
+        
+                <div>
+                    <label for="">Convenio*</label>
+                    <input class="" type="text">
+                </div>
+        
+        
+                <!-- <div>
+                    <label for="">Tipo Proposta Prev Invest</label>
+                    <input class="" type="text">
+                </div> -->
+            </form>
+        </div>
+    </div>
+</div>

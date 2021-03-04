@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-dados-basicos',
+  selector: 'dados-basicos',
   templateUrl: './dados-basicos.component.html',
   styleUrls: ['./dados-basicos.component.css']
 })

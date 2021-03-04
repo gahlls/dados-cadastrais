@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-senha',
+  selector: 'senha',
   templateUrl: './senha.component.html',
   styleUrls: ['./senha.component.css']
 })

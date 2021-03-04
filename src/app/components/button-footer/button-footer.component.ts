@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 
 
 @Component({
-  selector: 'app-button-footer',
+  selector: 'button-footer',
   templateUrl: './button-footer.component.html',
   styleUrls: ['./button-footer.component.css']
 })

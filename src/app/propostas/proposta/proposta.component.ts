@@ -3,7 +3,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Proposta } from './proposta.model'
 
 @Component({
-  selector: 'app-proposta',
+  selector: 'proposta',
   templateUrl: './proposta.component.html',
   styleUrls: ['./proposta.component.css']
 })

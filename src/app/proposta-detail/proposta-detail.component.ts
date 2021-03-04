@@ -5,7 +5,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 
 @Component({
-  selector: 'app-proposta-detail',
+  selector: 'proposta-detail',
   templateUrl: './proposta-detail.component.html',
   styleUrls: ['./proposta-detail.component.css']
 })
