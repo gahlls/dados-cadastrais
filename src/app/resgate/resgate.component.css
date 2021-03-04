@@ -8,7 +8,7 @@
 .container-resgate > div {
     width: 978px;
     height: 995px;
-    padding: 32px 24px 0px 24px;
+    padding: 32px 2rem 0px 2rem;
     background: #FAFAFA;
     
 }
@@ -16,10 +16,10 @@
 .card {
     display: flex;
     align-items: center;
-    height: 40px;
+    height: 46px;
     background: #001E64;
     color: #ffffff;
-    padding: 0 24px 0 24px;
+    padding: 0 2rem 0 2rem;
     margin-bottom: 1rem;
     cursor: pointer;
 }
@@ -28,10 +28,14 @@
     margin-right: 1rem;
 }
 
+.card > strong {
+    font-size: 1.2rem;
+}
+
 .content-resgate {
     display: flex;
     flex: 1;
-    padding: 0 24px 0 24px;
+    padding: 0 2rem 0 2rem;
     margin-bottom: 2rem;
 }
 

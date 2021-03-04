@@ -1,13 +1,14 @@
 <div class="container-simulador">
-    <header>
-        <div>
-            <strong>Dados da Simulação</strong>
-            <span>
-                Os valores podem sofrer alterações no dia do pagamento devido à rentabilidade
-                diária dos fundos de investimentos.
-            </span>
-        </div>
-        <div>
+    <section>
+        <strong>Dados da Simulação</strong>
+        <p>
+            Os valores podem sofrer alterações no dia do pagamento devido à rentabilidade
+            diária dos fundos de investimentos.
+        </p>
+    </section>
+
+    <main>
+        <div class="dados-proposta">
             <div>
                 <strong>Proposta:</strong>
                 <span>221344160</span>
@@ -27,127 +28,137 @@
             <div>
                 <strong>Saldo Total:</strong>
                 <span>595.003,07</span>
+            </div>  
+        </div>
+        <hr>
+        <div class="tipo-simulacao">
+            <strong>Tipo de Simulação:</strong>
+            <div>
+                <input type="radio" id="total" name="tipoSimulacao" value="total" [checked]="true" (change)="isOpen = true">
+                <label>Total</label>
+            </div>
+            <div>
+                <input type="radio" id="parcial" name="tipoSimulacao" value="parcial" (change)="isOpen = false" >
+                <label>Parcial</label>
             </div>
         </div>
-    </header>
-    <div>
-        <strong>Tipo de Simulação:</strong>
-        <div>
-            <input type="radio" id="total" name="tipoSimulacao" value="total" [checked]="true" (change)="isOpen = true">
-            <label>Total</label>
+        <div class="simulacao-valores" *ngIf="isOpen">
+            <div>
+                <label for="">Valor Bruto:</label>
+                <input type="text">
+            </div>
+            <div>
+                <label for="">Valor Líquido:</label>
+                <input type="text">
+            </div>
+            <div>
+                <button class="btn-limpar" (click)="isResultadosOpen = false">Limpar</button>
+                <button class="btn-simular"  (click)="isResultadosOpen = true">Simular</button>
+            </div>
         </div>
-        <div>
-            <input type="radio" id="parcial" name="tipoSimulacao" value="parcial" (change)="isOpen = false" >
-            <label>Parcial</label>
+        <div *ngIf="!isOpen" class="container-fundos">
+            <table>
+                <tr>
+                    <th>Categoria Fundo</th>
+                    <th>Fundo</th>
+                    <th>Saldo</th>
+                    <th>Valor Resgate</th>
+                    <th>Simular</th>
+                </tr>
+                <tr>
+                    <td>Renda Fixa</td>
+                    <td>SULAMERICA FIX 100 VI FI RENDA FIXA</td>
+                    <td>593.864,70</td>
+                    <td><input type="text"></td>
+                    <td>
+                        <button class="btn-simular-green" (click)="isResultadosOpen = false">
+                            <mat-icon>clear</mat-icon>
+                        </button>
+                        <button class="btn-simular-green" (click)="isResultadosOpen = true">
+                            <mat-icon>check_circle_outline</mat-icon>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Renda Variável</td>
+                    <td>SULAMEIRCA MIX 49 FI MULTIMERCADO</td>
+                    <td>1.938,37</td>
+                    <td><input type="text"></td>
+                    <td>
+                        <button class="btn-simular-green" (click)="isResultadosOpen = true">
+                            <mat-icon>check_circle_outline</mat-icon>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Renda Variável</td>
+                    <td>SULAMEIRCA MIX 49 FI MULTIMERCADO</td>
+                    <td>1.938,37</td>
+                    <td><input type="text"></td>
+                    <td>
+                        <button class="btn-simular-green" (click)="isResultadosOpen = !isResultadosOpen">
+                            <mat-icon>check_circle_outline</mat-icon>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span>Renda Variável</span></td>
+                    <td><span>SULAMEIRCA MIX 49 FI MULTIMERCADO</span></td>
+                    <td><span>1.938,37</span></td>
+                    <td><input type="text"></td>
+                    <td>
+                        <button class="btn-simular-green" (click)="isResultadosOpen = !isResultadosOpen">
+                            <mat-icon>check_circle_outline</mat-icon>
+                        </button>
+                    </td>
+                </tr>
+            </table> 
+            <div>
+                <button class="btn-limpar" (click)="isResultadosOpen = false">Limpar</button>
+                <button class="btn-simular" (click)="isResultadosOpen = true">Simular</button>
+            </div>
         </div>
-    </div>
-    <div *ngIf="isOpen">
-        <div>
-            <label for="">Valor Bruto:</label>
-            <input type="text">
+        <hr *ngIf="isResultadosOpen" style="margin-top: 1rem;">
+        <div *ngIf="isResultadosOpen" class="resultados-simulador">
+            <strong>Detalhes da Simulação:</strong>
+            <hr>
+            <div>
+                <strong>Valor simulador:</strong>
+                <span>221344160</span>
+            </div>
+            <hr>
+            <div>
+                <strong>Valor base da IR:</strong>
+                <span>02/03/2021</span>
+            </div>
+            <hr>
+            <div>
+                <strong>Imposto de Renda:</strong>
+                <span>595.003,07</span>
+            </div>
+            <hr>
+            <div>
+                <strong>Valor Líquido:</strong>
+                <span>0,00</span>
+            </div>
+            <hr>
+            <div>
+                <strong>Rendimento tributário:</strong>
+                <span>595.003,07</span>
+            </div>
+            <hr>
+            <div>
+                <strong>Rendimento:</strong>
+                <span>595.003,07</span>
+            </div>
+            <hr>
+            <div>
+                <strong>Percentual de IR:</strong>
+                <span>595.003,07</span>
+            </div>
+            <!-- <div>
+                <button>Resgatar</button>
+            </div> -->
         </div>
-        <div>
-            <label for="">Valor Líquido:</label>
-            <input type="text">
-        </div>
-        <div>
-            <button class="btn-limpar">Limpar</button>
-            <button class="btn-simular">Simular</button>
-        </div>
-    </div>
-    <div *ngIf="!isOpen" class="container-fundos">
-        <table>
-            <tr>
-                <th>Categoria Fundo</th>
-                <th>Fundo</th>
-                <th>Saldo</th>
-                <th>Valor Resgate</th>
-                <th>Simular</th>
-            </tr>
-            <tr>
-                <td>Renda Fixa</td>
-                <td>SULAMERICA FIX 100 VI FI RENDA FIXA</td>
-                <td>593.864,70</td>
-                <td><input type="text"></td>
-                <td>
-                    <button class="btn-simular-green" (click)="isResultadosOpen = !isResultadosOpen">
-                        <mat-icon>clear</mat-icon>
-                    </button>
-                    <button class="btn-simular-green" (click)="isResultadosOpen = !isResultadosOpen">
-                        <mat-icon>check_circle_outline</mat-icon>
-                    </button>
-                </td>
-            </tr>
-            <tr>
-                <td>Renda Variável</td>
-                <td>SULAMEIRCA MIX 49 FI MULTIMERCADO</td>
-                <td>1.938,37</td>
-                <td><input type="text"></td>
-                <td>
-                    <button class="btn-simular-green" (click)="isResultadosOpen = !isResultadosOpen">
-                        <mat-icon>check_circle_outline</mat-icon>
-                    </button>
-                </td>
-            </tr>
-            <tr>
-                <td>Renda Variável</td>
-                <td>SULAMEIRCA MIX 49 FI MULTIMERCADO</td>
-                <td>1.938,37</td>
-                <td><input type="text"></td>
-                <td>
-                    <button class="btn-simular-green" (click)="isResultadosOpen = !isResultadosOpen">
-                        <mat-icon>check_circle_outline</mat-icon>
-                    </button>
-                </td>
-            </tr>
-            <tr>
-                <td><span>Renda Variável</span></td>
-                <td><span>SULAMEIRCA MIX 49 FI MULTIMERCADO</span></td>
-                <td><span>1.938,37</span></td>
-                <td><input type="text"></td>
-                <td>
-                    <button class="btn-simular-green" (click)="isResultadosOpen = !isResultadosOpen">
-                        <mat-icon>check_circle_outline</mat-icon>
-                    </button>
-                </td>
-            </tr>
-        </table> 
-        <div>
-            <button class="btn-limpar" (click)="isResultadosOpen = false">Limpar</button>
-            <button class="btn-simular" (click)="isResultadosOpen = true">Simular</button>
-        </div>
-    </div>
-    <div *ngIf="isResultadosOpen" class="resultados-simulador">
-        <div>
-            <strong>Valor simulador:</strong>
-            <span>221344160</span>
-        </div>
-        <div>
-            <strong>Valor base da IR:</strong>
-            <span>02/03/2021</span>
-        </div>
-        <div>
-            <strong>Imposto de Renda:</strong>
-            <span>595.003,07</span>
-        </div>
-        <div>
-            <strong>Valor Líquido:</strong>
-            <span>0,00</span>
-        </div>
-        <div>
-            <strong>Rendimento tributário:</strong>
-            <span>595.003,07</span>
-        </div>
-        <div>
-            <strong>Rendimento:</strong>
-            <span>595.003,07</span>
-        </div>
-        <div>
-            <strong>Percentual Imposto de Renda:</strong>
-            <span>595.003,07</span>
-        </div>
-        <div>
-            <button>Resgatar</button>
-        </div>
-    </div>
+    </main>
 </div>

@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResgateComponent implements OnInit {
 
+  simuladorIsOpen = true
   resgateIsOpen = false 
-  simuladorIsOpen = false
 
   constructor() { }
 
